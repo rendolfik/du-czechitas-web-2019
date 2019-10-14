@@ -1,0 +1,24 @@
+p {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgba(45, 145, 32, 0.856);
+    line-height:1.5rem;
+
+}
+
+h1{
+    font-size: 2rem;
+    color: rgba(31, 54, 17, 0.925);
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ul {
+    font-size: 1rem;
+    font-style: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: brown;
+
+}
