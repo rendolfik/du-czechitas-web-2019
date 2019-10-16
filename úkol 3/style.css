@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 p {
     font-size: 1rem;
     font-style: italic;
@@ -8,17 +12,51 @@ p {
 
 }
 
-h1{
-    font-size: 2rem;
-    color: rgba(31, 54, 17, 0.925);
-    font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
 ul {
     font-size: 1rem;
     font-style: normal;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: brown;
+    color: blue;
 
+}
+
+.nadpis {
+    color: darkred;
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text {
+    font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ul>li:nth-child(2n+1) {
+    background-color: yellowgreen;
+    color: gold;
+}
+
+.odkaz {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.odkaz a:visited {
+    color: red;
+}
+
+.mail a:visited {
+    color: red;
+}
+
+.mail {
+    color: darkred;
+    font-weight: bolder;
+}
+
+header a:active {
+    color: deeppink;
+}
+
+header {
+    color: darkgreen;
 }
