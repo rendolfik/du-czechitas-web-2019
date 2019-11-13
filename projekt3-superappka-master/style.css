@@ -1,0 +1,190 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/*
+ BARVY
+ sede pozadi      #e5e5e5
+ svetle fialova   #48418e
+ tmave fialova    #25133d
+
+ POUZITE PISMO
+ Source Sans Pro - rezy pisma light 300, regular 400 a bold 700
+ https://fonts.google.com/specimen/Roboto
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #e5e5e5;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.obal {
+    width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
+    margin: 0 auto; /* pruh je na stránce vycentrovaný */
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ----- zde začni psát vlastní CSS ----- */
+
+.main-header{
+    background-color: white;
+    display:flex;
+    align-items: center;
+    }
+
+.brand-name{
+    text-decoration: none;
+    font-weight: 800;
+    padding: 20px;
+}
+
+
+.menu ul{
+    display:flex;
+    padding: 3px;
+     
+}
+
+.menu li{
+    list-style:none;
+    padding: 30px;
+    
+}
+
+.menu a{
+    text-decoration:none;
+    padding:1rem;
+}
+
+.menu a :active{
+    background-color: red;
+}
+
+.background-photo {
+    position: relative;
+}
+
+.background-photo .colours{
+    width: 100%;
+    height: 450px;
+}
+
+.background-photo .hand{
+    position: absolute;
+    right:0px;
+    bottom:7px;
+}
+
+.h1 {
+    font-family: "Source Sans Pro";
+    font-weight: 200;
+}
+.header {
+    position: absolute;
+    top: 150px;
+    padding: 2rem;
+    color:white;
+    font-family: "Source Sans Pro";
+    line-height: 1;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+.header-buttons ul {
+    display:flex;
+    justify-content: center;
+    position:absolute;
+    top: 450px;
+    margin:0rem;
+    
+    }
+
+.header-buttons li{
+    list-style:none;
+    padding:1rem;
+      
+}
+
+.header-buttons a{
+    text-decoration:none;
+    color:white;
+    border: 1px solid white;
+    border-radius: 10px;
+    
+}
+
+.header-buttons .download {
+    list-style: none;
+    padding: 1rem;
+    background-color: #48418e;
+    
+}
+
+.header-buttons.download :hover {
+    background-color: violet;
+}
+
+.header-buttons.download :active{
+    background-color: burlywood;;
+}
+
+a.information{
+    list-style:none;
+    padding:1rem;
+}
+
+a.information :hover{
+    background-color:blueviolet
+}
+
+a.information:active{
+    background-color: red;
+}
+
+.column{
+    display:flex;
+    align-items:baseline;
+    justify-content: center;
+    margin-left: 40px;
+    margin-right:40px;
+    padding-top: 20px;
+    padding-bottom:20px;
+}
+
+
+.column .travel {
+    display:inline-block;
+    text-align: center;
+
+}
+
+.column .bubbles {
+    display: inline-block;
+    text-align:center;
+}
+
+.column .maps {
+    display:inline-block;
+    text-align:center;
+}
+
+.copy {
+    display:inline-block;
+    width: 100%;
+    background-color: #25133d;
+}
+
+.copy-year{
+    color:white;
+    text-align: center;
+    font-size: 12px;
+    
+}
+
+

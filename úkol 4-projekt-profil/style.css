@@ -52,17 +52,21 @@ body {
     font-size: 1.5rem;
 }
 
-.odkazy {
-    margin: 0;
-    padding: 0;
-    }
+.odkazy ul {
+    display:flex;
+    justify-content: center;
+    margin:0rem;
+    padding:0rem;
+	}
 
 .odkazy li {
-    display: inline-block;
-   }
+    list-style:none;
+    display:flex;   
+    }
+    
+    
 
 .odkazy a {
-    display: block;
     font-family:'Montserrat', sans-serif;
     color:#bdc3c7;
     font-weight: bold;
@@ -70,14 +74,15 @@ body {
     text-transform: uppercase;
     border: 1px solid #3f464d;
     padding: 1rem;
+    text-decoration: none;
 }
 
 .portfolio {
     width: 100%;
-}
+    }
 
 .facebook .twitter {
-    width:50%;
+   width:50%;
 }
 
 .portfolio:hover {
@@ -86,6 +91,7 @@ body {
 
 .facebook :hover {
     background-color:#3b5998;
+
 }
 
 .twitter :hover {
