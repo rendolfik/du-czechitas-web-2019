@@ -20,11 +20,19 @@ ul {
 
 }
 
-.nadpis {
+h1 {
     color: darkred;
     font-style: normal;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+
+
+h2 {
+    color: blueviolet;
+    font-weight: bolder;
+}
+
 
 .text {
     font-weight: 900;
@@ -36,11 +44,11 @@ ul>li:nth-child(2n+1) {
     color: gold;
 }
 
-.odkaz {
+.link {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.odkaz a:visited {
+.link a:visited {
     color: red;
 }
 
