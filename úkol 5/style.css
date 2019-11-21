@@ -52,22 +52,22 @@ body {
     font-size: 1.5rem;
 }
 
-.odkazy ul {
+.odkazy {
     display:flex;
-    justify-content: center;
+    flex-wrap: wrap;    
     margin:0rem;
     padding:0rem;
 	}
 
 .odkazy li {
     list-style:none;
-    display:flex;   
-    }
+    display:flex;       
+}
     
     
 
 .odkazy a {
-    font-family:'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     color:#bdc3c7;
     font-weight: bold;
     text-align: center;
