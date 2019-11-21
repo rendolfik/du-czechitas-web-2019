@@ -52,22 +52,21 @@ body {
     font-size: 1.5rem;
 }
 
-.odkazy ul {
-    display:flex;
-    justify-content: center;
+.odkazy {
+    list-style: none;
     margin:0rem;
     padding:0rem;
 	}
 
 .odkazy li {
-    list-style:none;
-    display:flex;   
+    display: inline-block;   
     }
     
     
+/* stále nemůžu přijít na to, proč nejsou odkazy vedle sebe */
 
 .odkazy a {
-    font-family:'Montserrat', sans-serif;
+    font-family:Montserrat, sans-serif;
     color:#bdc3c7;
     font-weight: bold;
     text-align: center;
@@ -75,13 +74,14 @@ body {
     border: 1px solid #3f464d;
     padding: 1rem;
     text-decoration: none;
+    display:block;
 }
 
 .portfolio {
     width: 100%;
-    }
+}
 
-.facebook .twitter {
+.facebook, .twitter {
    width:50%;
 }
 
@@ -89,11 +89,11 @@ body {
     background-color: #e74c3c;
 }
 
-.facebook :hover {
+.facebook:hover {
     background-color:#3b5998;
 
 }
 
-.twitter :hover {
+.twitter:hover {
     background-color: #1da1f2;
 }
