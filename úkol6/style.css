@@ -42,20 +42,20 @@ body {
 .brand-name{
     text-decoration: none;
     font-weight: 800;
-    padding: 20px;
+    padding: 40px;
 }
 
 
 .menu ul{
     display:flex;
-    padding: 3px;
+   
      
 }
 
 .menu li{
     list-style:none;
-    padding: 30px;
-    
+    padding: 10px;
+       
 }
 
 .menu a{
@@ -73,7 +73,7 @@ body {
 
 .background-photo .colours{
     width: 100%;
-    height: 450px;
+    height: 400px;
 }
 
 .background-photo .hand{
@@ -82,19 +82,21 @@ body {
     bottom:7px;
 }
 
-.h1 {
-    font-family: "Source Sans Pro";
-    font-weight: 200;
-}
+
 .header {
+    font-family: "source sans pro";
     position: absolute;
     top: 50px;
     padding: 2rem;
     color:white;
-    font-family: "Source Sans Pro";
     line-height: 1;
     font-weight: lighter;
     font-size: 30px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
 }
 
 .header-buttons ul {
@@ -116,14 +118,16 @@ body {
     color:white;
     border: 1px solid white;
     border-radius: 10px;
+    display:flex;
+    flex-wrap: nowrap;
+    
     
 }
 
-.header-buttons .download {
+.download {        
     list-style: none;
     padding: 1rem;
     background-color: #48418e;
-    
 }
 
 .download:hover {
