@@ -67,19 +67,18 @@ body {
     background-color: red;
 }
 
-.background-photo {
-    position: relative;
-}
-
-.background-photo .colours{
-    width: 100%;
+.main {
+    width: 960px;
     height: 400px;
+    background-image: url(pozadi.jpg);
+    background-position: center 50%;
 }
 
 .background-photo .hand{
     position: absolute;
-    right:0px;
-    bottom:7px;
+    right: 150px;
+    height: 380px;
+    bottom: 160px;;
 }
 
 
@@ -103,8 +102,9 @@ h1 {
     display:flex;
     justify-content: center;
     position:absolute;
-    top: 350px;
-    margin:0rem;    
+    top: 300px;
+    margin:0rem;   
+    padding: 1rem; 
     }
 
 .header-buttons li{
@@ -118,8 +118,10 @@ h1 {
     color:white;
     border: 1px solid white;
     border-radius: 10px;
+    width: 180px;
     display:flex;
     flex-wrap: nowrap;
+    justify-content: center;
     
     
 }
