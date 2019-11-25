@@ -70,6 +70,10 @@ body {
     background-color: red;
 }
 
+.menu a:hover{
+    transition: 2s ease-in;
+}
+
 .main {
     position: relative;
     width: 960px;
