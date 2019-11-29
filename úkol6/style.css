@@ -21,10 +21,11 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+    
 }
 
 .obal {
-    width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
+    max-width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
     margin: 0 auto; /* pruh je na stránce vycentrovaný */
     background: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -47,9 +48,7 @@ body {
 
 
 .menu ul{
-    display:flex;
-   
-     
+    display:flex;     
 }
 
 .menu li{
@@ -63,29 +62,28 @@ body {
     padding:1rem;
 }
 
-.menu a :active{
-    background-color: red;
+.menu :hover{
+    transform:scale(1.2)
 }
 
-.main {
-    width: 960px;
-    height: 400px;
+
+.introduction-info {
+    position: relative;
+    height: 400px;    
     background-image: url(pozadi.jpg);
     background-position: center 50%;
+    overflow: hidden;
 }
 
-.background-photo .hand{
+.hand{
     position: absolute;
-    right: 150px;
-    height: 380px;
-    bottom: 160px;;
+    right:0px;
+          
 }
-
 
 .header {
     font-family: "source sans pro";
     position: absolute;
-    top: 50px;
     padding: 2rem;
     color:white;
     line-height: 1;
@@ -102,7 +100,7 @@ h1 {
     display:flex;
     justify-content: center;
     position:absolute;
-    top: 300px;
+    top: 250px;
     margin:0rem;   
     padding: 1rem; 
     }
@@ -121,8 +119,7 @@ h1 {
     width: 180px;
     display:flex;
     flex-wrap: nowrap;
-    justify-content: center;
-    
+    justify-content: center;    
     
 }
 
@@ -133,11 +130,11 @@ h1 {
 }
 
 .download:hover {
-    background-color: violet;
+    background-color: aquamarine;
 }
 
 .download:active{
-    background-color: burlywood;;
+    background-color: aqua;
 }
 
 a.information{
@@ -146,7 +143,7 @@ a.information{
 }
 
 a.information:hover{
-    background-color:blueviolet
+    background-color: burlywood
 }
 
 a.information:active{
@@ -161,6 +158,7 @@ a.information:active{
     margin-right:40px;
     padding-top: 20px;
     padding-bottom:20px;
+   
 }
 
 
@@ -192,5 +190,3 @@ a.information:active{
     font-size: 12px;
     
 }
-
-
