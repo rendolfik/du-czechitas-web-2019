@@ -21,6 +21,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+    
 }
 
 .obal {
@@ -47,8 +48,7 @@ body {
 
 
 .menu ul{
-    display:flex;
-     
+    display:flex;     
 }
 
 .menu li{
@@ -63,36 +63,26 @@ body {
 }
 
 .menu :hover{
-    transform: scale(1.2);
+    transform:scale(1.2)
 }
 
-.menu a :active{
-    background-color: red;
-}
 
-.menu a:hover{
-    transition: 2s ease-in;
-}
-
-.main {
+.introduction-info {
     position: relative;
-    width: 960px;
-    height: 400px;
+    height: 400px;    
     background-image: url(pozadi.jpg);
     background-position: center 50%;
 }
 
-.background-photo .hand{
+.hand{
     position: absolute;
-    right: 0px;
-    max-width: 960px;
+    right:0px;
+          
 }
-
 
 .header {
     font-family: "source sans pro";
     position: absolute;
-    top: 0px;
     padding: 2rem;
     color:white;
     line-height: 1;
@@ -128,8 +118,7 @@ h1 {
     width: 180px;
     display:flex;
     flex-wrap: nowrap;
-    justify-content: center;
-    
+    justify-content: center;    
     
 }
 
@@ -141,13 +130,11 @@ h1 {
 
 .download:hover {
     animation: rotate 1s;
-    background-color: violet;
 }
 
 .download:active{
-    background-color: burlywood;;
+    background-color: aqua;
 }
-
 
 a.information{
     list-style:none;
@@ -156,7 +143,7 @@ a.information{
 
 a.information:hover{
     animation: rotate 1s reverse;
-    background-color:blueviolet
+    background-color: burlywood
 }
 
 a.information:active{
@@ -169,8 +156,9 @@ a.information:active{
     justify-content: center;
     margin-left: 40px;
     margin-right:40px;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom:20px;
+   
 }
 
 
@@ -203,30 +191,44 @@ a.information:active{
     
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px){
     .hand{
-        overflow: hidden;
-    }
-}
-
-@media (max-width:768px) {
-    .column{
+        display:none;
+    }  
+    .column {
         flex-direction: column;
     }
-
-    .menu{
+    .menu {
         display:none;
+    } 
+    
+
+    }
+
+@media (max-width: 400px){
+    .header{
+        margin-left: unset;
+        margin-right: unset;
+        font-size: 20px;
+    }
+    .header-buttons ul{
+       flex-direction: column;
+       top:240px;  
+       
+        
     }
 }
 
 @keyframes rotate {
-    0%{
-        transform: rotate(-45deg);
+    0% {
+        transform: rotate (-45deg);
         }
     50%{
         transform: rotate(20deg);
-    }    
+        }   
     100%{
         translate: rotate(45deg);
-    }
+    } 
+       
 }
+
