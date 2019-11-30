@@ -1,0 +1,258 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/*
+ BARVY
+ sede pozadi      #e5e5e5
+ svetle fialova   #48418e
+ tmave fialova    #25133d
+
+ POUZITE PISMO
+ Source Sans Pro - rezy pisma light 300, regular 400 a bold 700
+ https://fonts.google.com/specimen/Roboto
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #e5e5e5;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    
+}
+
+.obal {
+    max-width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
+    margin: 0 auto; /* pruh je na stránce vycentrovaný */
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ----- zde začni psát vlastní CSS ----- */
+
+.main-header{
+    background-color: white;
+    display:flex;
+    align-items: center;
+    height: 50px;
+    }
+
+.navbar-brand {
+    text-decoration: none;
+    font-weight: 800;
+    padding: 40px;
+}
+
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color:rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: .25rem;
+}
+.navbar-toggler-icon{
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+    }
+
+.menu ul{
+    display:flex;     
+}
+
+.menu li{
+    list-style:none;
+    padding: 10px;
+       
+}
+
+.menu a{
+    text-decoration:none;
+    padding:1rem;
+}
+
+.menu :hover{
+    transform:scale(1.2)
+}
+
+
+.introduction-info {
+    position: relative;
+    height: 400px;    
+    background-image: url(pozadi.jpg);
+    background-position: center 50%;
+}
+
+.hand{
+    position: absolute;
+    right:0px;
+          
+}
+
+.header {
+    font-family: "source sans pro";
+    padding: 2rem;
+    color:white;
+    line-height: 1;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.header-buttons ul {
+    display:flex;
+    justify-content: center;
+    position:absolute;
+    top: 230px;
+    margin:0rem;   
+    padding: 1rem; 
+    }
+
+.header-buttons li{
+    list-style:none;
+    padding:0.5rem;
+      
+}
+
+.header-buttons a{
+    text-decoration:none;
+    color:white;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 180px;
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: center;    
+    
+}
+
+.download {        
+    list-style: none;
+    padding: 1rem;
+    background-color: #48418e;
+}
+
+.download:hover {
+    animation: rotate 1s;
+}
+
+.download:active{
+    background-color: aqua;
+}
+
+a.information{
+    list-style:none;
+    padding:1rem;
+}
+
+a.information:hover{
+    animation: rotate 1s reverse;
+    background-color: burlywood
+}
+
+a.information:active{
+    background-color: red;
+}
+
+.column{
+    display:flex;
+    align-items:baseline;
+    justify-content: center;
+    margin-left: 40px;
+    margin-right:40px;
+    padding-top: 20px;
+    padding-bottom:20px;
+   
+}
+
+
+.column .travel {
+    display:inline-block;
+    text-align: center;
+
+}
+
+.column .bubbles {
+    display: inline-block;
+    text-align:center;
+}
+
+.column .maps {
+    display:inline-block;
+    text-align:center;
+}
+
+.copy {
+    display:inline-block;
+    width: 100%;
+    background-color: #25133d;
+}
+
+.copy-year{
+    color:white;
+    text-align: center;
+    font-size: 12px;
+    
+}
+
+@media (max-width: 760px){
+    .hand{
+        display:none;
+    }  
+    .column {
+        flex-direction: column;
+    }
+    .menu {
+        display:none;
+    } 
+   }
+
+    @media (min-width:760px){
+        .navbar-toggler-menu{
+            display:none;
+            }
+
+        .navbar-toggler-icon{
+            display:none;
+        }
+
+        .menu {
+            position:absolute;
+            text-align:right;
+        }
+    }
+
+@media (max-width: 400px){
+    .header{
+        margin-left: unset;
+        margin-right: unset;
+        font-size: 16px;
+    }
+    .header-buttons ul{
+       flex-direction: column;
+        
+        
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate (-45deg);
+        }
+    50%{
+        transform: rotate(20deg);
+        }   
+    100%{
+        translate: rotate(45deg);
+    } 
+       
+}
+
