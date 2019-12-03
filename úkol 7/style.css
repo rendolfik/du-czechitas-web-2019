@@ -38,7 +38,7 @@ body {
     display:flex;
     align-items: center;
     height: 50px;
-    }
+}
 
 .brand-name{
     text-decoration: none;
@@ -71,7 +71,7 @@ body {
     position: relative;
     height: 400px;    
     background-image: url(pozadi.jpg);
-    background-position: center 50%;
+    background-position: top left;
 }
 
 .hand{
@@ -156,7 +156,7 @@ a.information:active{
     justify-content: center;
     margin-left: 40px;
     margin-right:40px;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom:20px;
    
 }
