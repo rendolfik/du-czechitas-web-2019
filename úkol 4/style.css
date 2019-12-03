@@ -43,7 +43,7 @@ body {
 .obsah {    
     padding: 1rem;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 0.9rem;
+    font-size: .9rem;
 }
 
 .obsah .jmeno {
@@ -54,24 +54,21 @@ body {
 
 .odkazy {
     list-style: none;
-    margin:0rem;
-    padding:0rem;
-	}
+    margin:0;
+    padding:0;
+}
 
 .odkazy li {
     display: inline-block;   
-    }
-    
-    
-/* stále nemůžu přijít na to, proč nejsou odkazy vedle sebe */
-
+}
+      
 .odkazy a {
     font-family:Montserrat, sans-serif;
     color:#bdc3c7;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    border: 1px solid #3f464d;
+    border: solid 1px #3f464d;
     padding: 1rem;
     text-decoration: none;
     display:block;
