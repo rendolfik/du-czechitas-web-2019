@@ -28,6 +28,7 @@ body {
 .hlavicka {
     position: relative;
 }
+
 .hlavicka .foto {
     width: 100%;
 }
@@ -54,18 +55,13 @@ body {
 
 .odkazy {
     display:flex;
-    flex-wrap: wrap;    
-    margin:0rem;
-    padding:0rem;
-	}
-
-.odkazy li {
+    flex-wrap:wrap;
     list-style:none;
-    display:flex;       
+    margin:0;
+    padding:0; 
 }
-    
-    
 
+    
 .odkazy a {
     font-family: Montserrat, sans-serif;
     color:#bdc3c7;
