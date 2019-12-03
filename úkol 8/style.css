@@ -38,7 +38,7 @@ body {
     display:flex;
     align-items: center;
     height: 50px;
-    }
+}
 
 .navbar-brand {
     text-decoration: none;
@@ -46,36 +46,37 @@ body {
     padding: 40px;
 }
 
-.navbar-toggler {
-    padding: .25rem .75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    background-color:rgba(255, 255, 255, 0);
-    border: 1px solid rgba(255, 255, 255, 0);
-    border-radius: .25rem;
+.navbar-toggler-menu {
+    display: none;
 }
+
 .navbar-toggler-icon{
+    display:inline-block;
     width: 1.5em;
     height: 1.5em;
     cursor: pointer;
-    }
+}
 
-.menu ul{
-    display:flex;     
+.nav-link{
+    display:flex;  
+    justify-items: center;
+    text-decoration: none;
+    list-style:none;
 }
 
 .menu li{
     list-style:none;
-    padding: 10px;
-       
+    padding:10px;
 }
 
 .menu a{
     text-decoration:none;
-    padding:1rem;
+    padding: 0.5rem;
+    display: block;
 }
 
-.menu :hover{
+
+.menu a:hover{
     transform:scale(1.2)
 }
 
@@ -84,7 +85,7 @@ body {
     position: relative;
     height: 400px;    
     background-image: url(pozadi.jpg);
-    background-position: center 50%;
+    background-position: top left;
 }
 
 .hand{
@@ -111,7 +112,7 @@ h1 {
     display:flex;
     justify-content: center;
     position:absolute;
-    top: 230px;
+    top: 240px;
     margin:0rem;   
     padding: 1rem; 
     }
@@ -168,7 +169,7 @@ a.information:active{
     justify-content: center;
     margin-left: 40px;
     margin-right:40px;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom:20px;
    
 }
@@ -203,44 +204,61 @@ a.information:active{
     
 }
 
+.menu-show{
+    display:block !important;   
+}
+
 @media (max-width: 760px){
     .hand{
         display:none;
     }  
+
     .column {
         flex-direction: column;
     }
+   
     .menu {
         display:none;
-    } 
-   }
-
-    @media (min-width:760px){
-        .navbar-toggler-menu{
-            display:none;
-            }
-
-        .navbar-toggler-icon{
-            display:none;
-        }
-
-        .menu {
-            position:absolute;
-            text-align:right;
-        }
+        position:absolute;
+        top: 50px;
+        background-color:white;
+        z-index:4;
+        width:100%;
+        line-height: 0;
+               
     }
+
+    .nav-link{
+        padding-left:1rem;
+    }
+
+    .menu a:hover{
+       text-decoration: none;
+    }
+
+    .menu ul {
+        flex-direction: column;        
+    }
+
+    .navbar-toggler-menu {
+        display: block;       
+        
+    }
+}
+
 
 @media (max-width: 400px){
     .header{
         margin-left: unset;
         margin-right: unset;
-        font-size: 16px;
+        font-size: 20px;
     }
     .header-buttons ul{
        flex-direction: column;
-        
-        
+               
     }
+
+
 }
 
 @keyframes rotate {

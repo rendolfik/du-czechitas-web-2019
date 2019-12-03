@@ -8,12 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-   
-   <style>
-    .menu-show{
-        display: block !important;
-    }
-    </style>
+
 
 </head>
 
@@ -28,12 +23,13 @@
             </a>
 
             <button id="navbarToggler" class="navbar-toggler-menu">
-                   <img class="navbar-toggler-icon" src="iconfinder_menu-alt_134216.png" alt="hamburger-menu">
-                </button>
+                <img class="navbar-toggler-icon" src="iconfinder_menu-alt_134216.png" alt="hamburger-menu">
+            </button>
+
             <nav id="navbar" class="menu">
-                    
-                <ul>
-                    <li class="nav-link">
+
+                <ul class="nav-link">
+                    <li>
                         <a href="#">
                             Úžasný design
                         </a>
@@ -64,12 +60,12 @@
                     <h1>
                         Super Appka
                     </h1>
-    
+
                     <p class="description"> Úžasná mobilní aplikace,<br>která Ti změní život.</p>
                 </div>
 
-                <div class="header-buttons"> 
-    
+                <div class="header-buttons">
+
                     <ul>
                         <li>
                             <a href="#" class="download">
@@ -85,87 +81,91 @@
                     </ul>
                 </div>
 
-                            
-
             </div>
 
-        <div class="column">
+            <div class="column">
 
-            <div class="travel">
-                <img class="airplane" src="letadlo.svg" width="80" height="80" alt="letadlo">
+                <div class="travel">
+                    <img class="airplane" src="letadlo.svg" width="80" height="80" alt="letadlo">
 
-                <h2>
-                    Cestuj po světě
-                </h2>
+                    <h2>
+                        Cestuj po světě
+                    </h2>
 
-                <p class="first-paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos ipsam doloribus hic quod nisi
-                    quibusdam perspiciatis adipisci eligendi voluptatem modi, dolor quis molestias optio sed sit dicta
-                    porro similique?
-
-                </p>
-                
-            </div>
-
-            <div class="bubbles">
-                <img class="bubble" src="bubliny.svg" width="80" height="80" alt="bubliny">
-
-                <h2>
-                    Chatuj s přáteli
-                </h2>
-
-                <p class="second-paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos ipsam doloribus hic quod nisi
-                        quibusdam perspiciatis adipisci eligendi voluptatem modi, dolor quis molestias optio sed sit dicta
-                        porro similique?
-                </p>
-
-            </div>
-
-            <div class="maps">
-                <img class="map" src="mapa.svg" width="80" height="80" alt="mapa">
-
-                <h2>
-                    Zažij dobrodružství
-                </h2>
-
-                <p class="third-paragraph"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos ipsam doloribus hic quod nisi
-                        quibusdam perspiciatis adipisci eligendi voluptatem modi, dolor quis molestias optio sed sit dicta
+                    <p class="first-paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos ipsam doloribus hic quod
+                        nisi
+                        quibusdam perspiciatis adipisci eligendi voluptatem modi, dolor quis molestias optio sed sit
+                        dicta
                         porro similique?
 
-                </p>
+                    </p>
+
+                </div>
+
+                <div class="bubbles">
+                    <img class="bubble" src="bubliny.svg" width="80" height="80" alt="bubliny">
+
+                    <h2>
+                        Chatuj s přáteli
+                    </h2>
+
+                    <p class="second-paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos ipsam doloribus hic quod
+                        nisi
+                        quibusdam perspiciatis adipisci eligendi voluptatem modi, dolor quis molestias optio sed sit
+                        dicta
+                        porro similique?
+                    </p>
+
+                </div>
+
+                <div class="maps">
+                    <img class="map" src="mapa.svg" width="80" height="80" alt="mapa">
+
+                    <h2>
+                        Zažij dobrodružství
+                    </h2>
+
+                    <p class="third-paragraph"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos
+                        ipsam doloribus hic quod nisi
+                        quibusdam perspiciatis adipisci eligendi voluptatem modi, dolor quis molestias optio sed sit
+                        dicta
+                        porro similique?
+
+                    </p>
+                </div>
             </div>
-        </div>
 
             <footer class="copy">
-                 <p class="copy-year"> @2016, Web od A do Z
-                 </p>     
-            
+                <p class="copy-year"> @2016, Web od A do Z
+                </p>
+
             </footer>
 
 
     </div>
-    
+
 
 
 
     </main>
 
     <script> /* menu se nerozbaluje jako sloupec, responzivita funguje do 250px*/
-            (function () {
-            
+        (function () {
+
             let navbarToggler = document.querySelector("#navbarToggler")
             let navbar = document.querySelector("#navbar")
-            
-            navbarToggler.addEventListener("click", function() {
-                navbar.classList.toggle("menu-show")
-                
-            })     
 
-        } )()
+            navbarToggler.addEventListener("click", function () {
+                navbar.classList.toggle("menu-show")
+
+            })
+
+        })()
     </script>
 
-   
+
 
 
 
